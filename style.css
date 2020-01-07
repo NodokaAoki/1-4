@@ -224,28 +224,65 @@ footer{
 
 /*レスポンシブ対応*/
 
-/*すべての画面サイズで適用される設定*/
-.social i{
-	color: black;
-}
-
-/*タブレット横置きサイズ(1024px)以下の際に適用される設定*/
-@media screen and (max-width: 1024px){
-	.social i{
-		color: green;
-	}
-}
-
-/*タブレット縦置きサイズ(768px)以下の際に適用される設定*/
-@media screen and (max-width: 768px){
-	.social i{
-		color: red;
-	}
-}
-
-/*スマートフォンサイズ(425px)以下の際に適用される設定*/
 @media screen and (max-width: 425px){
-	.social i{
-		color: blue;
+	/*header*/
+	header{
+		width: 100%;
+	}
+	.nav-list{
+		width: 100%;
+	}
+	.nav-list-item{
+		display: block;
+		margin: 0 0 10px 0;
+	}
+	.social{
+		display: none;
+	}
+	/*main vidual*/
+	.main-visual{
+		width: 100%;
+	}
+	.main-visual-content{
+		width: 100%;
+	}
+	/*main blog*/
+	main{
+		width: 100%;
+	}
+	.blog{
+		margin: 0;
+		width: 100%;
+	}
+	.blog-box{
+		padding-right: 2%;
+		padding-left:2%;
+	}
+	.blog-image{
+		width: 49%;
+	}
+	.blog-text{
+		padding-top: 5px;
+		width: 49%;
+	}
+	.pagination{
+		margin: 50px;
+	}
+
+	/*main section*/
+	.sidebar{
+		width: 100%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	.instagram-box{
+		width: 48%;
+		padding-top: 48%;
+	}
+	.sidebar-contents{
+		width: 100%;
+	}
+	.instagram-box:nth-child(odd){
+	margin: 0 4% 4% 0;
 	}
 }
